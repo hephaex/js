@@ -196,3 +196,25 @@ h1 {color: rgb(0,255,0);}
 ```
 h1 {color: #ff0000;}
 ```
+
+## 텍스트 스타일을 지정
+- 색상 css7-1.html
+ - color : gray;
+- 문자 속성 css7-2.html
+ - font-weight: bold;
+ - font-weight: normal;
+- 문자 크기 css7-3.html
+ - font-size : 14px
+ - font-size : 20px
+ - font-size : 32px
+- 문단 정렬 css7-4.html
+ - text-align: center;
+ - text-align: left;
+ - text-align: right;
+- 문단 꾸미기 css7-5.html
+ - text-decoration: line-through;
+- 글꼴 지정 css7-6.hyml 
+ - font-family: Impact;
+- 간격 조정 css7-7.html
+ - line-height: 40px;
+
