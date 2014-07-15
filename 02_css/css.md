@@ -247,3 +247,36 @@ h1 {color: #ff0000;}
 - 배경을 한번에 지정해보자.
   - background: green url('bg.png') no-repeat;
   - [css8-9.html](https://github.com/hephaex/js/blob/master/02_css/css8-9.html)
+
+## 박스를 그려보자.
+- 바탕이 녹색이고, 가로 400px, 세로 400px를 그려보자.
+```
+div {
+  background: green;
+  width: 400px;
+  height: 400px;
+}
+```
+  - [css9-1.html](https://github.com/hephaex/js/blob/master/02_css/css9-1.html)
+- 바탕이 녹색이고, 가로비가 50%, 세로비가 50%를 그려보자.
+```
+div {
+  background: green;
+  width: 50%;
+  height: 50%;
+}
+```
+  - [css9-2.html](https://github.com/hephaex/js/blob/master/02_css/css9-2.html)
+- 브라우저에 따라서 높이를 지정할 경우가 있다. 
+```
+body,html {
+  height:100%;
+}
+div {
+  background: green;
+  width: 50%;
+  height: 50%;
+}
+```
+  - [css9-3.html](https://github.com/hephaex/js/blob/master/02_css/css9-3.html)
+
