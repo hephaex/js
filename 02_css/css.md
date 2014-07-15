@@ -280,3 +280,26 @@ div {
 ```
   - [css9-3.html](https://github.com/hephaex/js/blob/master/02_css/css9-3.html)
 
+## border를 사용해 보자.
+- 테두리 색깔
+  - border-color
+- 테두리 크기
+  - border-width
+- 테두리 속성
+  - border-style solid dashed dotted double inset outset
+- 테두리 색깔, 크기, 속성을 한번에 지정해보자. 
+  - border red 5px solid;
+  - [css10-1.html](https://github.com/hephaex/js/blob/master/02_css/css10-1.html)
+- 테두리가 점선으로 지정해보자. 
+  - border red 5px dashed;
+  - [css10-2.html](https://github.com/hephaex/js/blob/master/02_css/css10-2.html)
+- 테두리가 안쪽으로 속성을 지정해보자.
+  - border red 5px inset;
+  - [css10-3.html](https://github.com/hephaex/js/blob/master/02_css/css10-3.html)
+- 테두리가 바깥쪽으로 속성을 지정해보자.
+  - border red 5px outset;
+  - [css10-4.html](https://github.com/hephaex/js/blob/master/02_css/css10-4.html)
+- 테두리가 왼쪽과 오른쪽의 속성을 지정해보자.
+  - border red 5px outset;
+  - [css10-5.html](https://github.com/hephaex/js/blob/master/02_css/css10-5.html)
+  
