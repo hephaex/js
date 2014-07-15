@@ -358,3 +358,12 @@ o  - [css12-4.html](https://github.com/hephaex/js/blob/master/02_css/css12-4.htm
  - 영역을 넘어갈 때 넘어간 부분을 스크롤로 보여줄 때 overfloe: scroll;을 사용한다.
    - [css12-7.html](https://github.com/hephaex/js/blob/master/02_css/css12-7.html) 
 
+## position
+- 요소의 배치 방법을 지정함
+ - static: 고정시킬 때
+ - relative : 부모요소
+ - absolute : 자식요소
+ - fixed
+- new라는 lable을 만들어 요소 배치를 지정해 보자.
+  - [css13-1.html](https://github.com/hephaex/js/blob/master/02_css/css13-1.html)
+
