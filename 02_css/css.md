@@ -136,19 +136,24 @@ ul {
 1. 셀렉터가 동일하다면 나중의 것이 우선된다.
   - 녹색으로 출력된다.
   - css5-1.html
-> h1 {color: red;}
-> h1 {color: green;}
+```
+h1 {color: red;}
+h1 {color: green;}
+```
 
 2. 아웃보다는 인라인이 우선된다.
   - 앞에서 스타일로 녹색을 정의했지만,
   - 인라인으로 설정한 핑크가 출력된다.
   - css5-2.html
-> <style>
->  h1 {color:green;}
-> </style>
+```
+<style>
+ h1 {color:green;}
+</style>
 
-> <h1 style="color:pink"> main 예시 </h1>
-  
+...
+<h1 style="color:pink"> main 예시 </h1>
+```
+
 3. 요소가 높은 것이 우선된다.
   - # 라벨은 100의 우선순위
   - . 은 10의 우선순위
@@ -171,3 +176,23 @@ h1 {color:red !important;}
 section#main h1 {color: yellow;}
 ```
 
+## 색을 지정해 보자.
+- 이름으로 지정
+  - red blue purple
+```
+h1 {color: blue;}
+```
+- RGB로 지정
+  - r(ed)/g(reen)/b(lue) 0~255
+  - rgb(0,255,0)
+  - css6-1.html
+```
+h1 {color: rgb(0,255,0);}
+```	
+- 16진수로 지정
+  - '#00f /* blue */
+  - '#ff0000 /* red */
+  - css6-2.html
+```
+h1 {color: #ff0000;}
+```
