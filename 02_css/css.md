@@ -131,3 +131,43 @@ ul {
 - p요소중에 b구성요소를 설정
   - p item으로 지정한 것만 빨강색으로 만듬.
 > p.item { color: red;}
+
+## 스타일 지정 우선 순위
+1. 셀렉터가 동일하다면 나중의 것이 우선된다.
+  - 녹색으로 출력된다.
+  - css5-1.html
+> h1 {color: red;}
+> h1 {color: green;}
+
+2. 아웃보다는 인라인이 우선된다.
+  - 앞에서 스타일로 녹색을 정의했지만,
+  - 인라인으로 설정한 핑크가 출력된다.
+  - css5-2.html
+> <style>
+>  h1 {color:green;}
+> </style>
+
+> <h1 style="color:pink"> main 예시 </h1>
+  
+3. 요소가 높은 것이 우선된다.
+  - # 라벨은 100의 우선순위
+  - . 은 10의 우선순위
+  - 요소는 1의 우선순위
+  - css5-3.html
+  - 예시로 우선순위를 계산해 보면
+  - section#main 이 1 + 100 + 1로 우선된다.
+```
+h1{color:green;} /* 1 */
+#main h1 {color:red} /* 100 +1 */
+section#main h1 {color: yellow;} /* 1 + 100 + 1 */
+```
+
+4. !important 가 최우선된다.
+  - !important 가 붙으면 우선순위가 낮더라도 최우선된다.
+  - css5-4.html
+```
+h1 {color:red !important;}
+#main h1 {color:green;}
+section#main h1 {color: yellow;}
+```
+
