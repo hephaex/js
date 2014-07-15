@@ -326,5 +326,35 @@ body,html {
  - padding-left : 10px;
  - marging : 20px;
  - [css11-3.html](https://github.com/hephaex/js/blob/master/02_css/css11-3.html)
+ - padding-left : 10px;
+ - marging-left : 20px;
  - [css11-4.html](https://github.com/hephaex/js/blob/master/02_css/css11-4.html)
+
+## display overflow
+- 요소의 표시방법을 지정하는 display
+- display
+  - block       // 전후에 개행이 들어감
+  - inline      // 전후에 개행이 들어가지 않음.
+  - inline-block // 전후에 개행이 들어가지 않음.
+  - none
+  - 스크립트로 해서 자주 사용함.
+- 기본적으로 블록으로 정의되므로
+  - <div> box </div> <div> box </div> <div> box </div>이면
+  - 세로로 나열된다. 
+  - [css12-1.html](https://github.com/hephaex/js/blob/master/02_css/css12-1.html)
+- 이것을 가로로 바꾸면. inline을 사용한다.
+  - display: inline;
+  - [css12-2.html](https://github.com/hephaex/js/blob/master/02_css/css12-2.html)
+- 가로에 세로의 폭을 블록으로 지정할때는 inline-block을 사용한다.
+  - [css12-3.html](https://github.com/hephaex/js/blob/master/02_css/css12-3.html)
+- 표시하고 싶지 않을 때는 none을 사용한다.
+o  - [css12-4.html](https://github.com/hephaex/js/blob/master/02_css/css12-4.html)
+- overflow
+ - 요소 안에서 표시 영역을 지정하는 overflow
+ - 영역을 넘어갈 때
+   - [css12-5.html](https://github.com/hephaex/js/blob/master/02_css/css12-5.html)
+ - 영역을 넘어갈 때 넘어간 부분을 숨길 때 overfloe: hidden;을 사용한다.
+   - [css12-6.html](https://github.com/hephaex/js/blob/master/02_css/css12-6.html) 
+ - 영역을 넘어갈 때 넘어간 부분을 스크롤로 보여줄 때 overfloe: scroll;을 사용한다.
+   - [css12-7.html](https://github.com/hephaex/js/blob/master/02_css/css12-7.html) 
 
