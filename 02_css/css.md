@@ -303,3 +303,28 @@ div {
   - border red 5px outset;
   - [css10-5.html](https://github.com/hephaex/js/blob/master/02_css/css10-5.html)
   
+## padding, margin
+- 브라우져가 자동으로 간격을 떨어뜨리므로
+- margin: 0; 으로 설정하자.
+```
+body,html {
+        height:100%;
+        margin: 0;
+      }
+```
+- 등간격으로 띄워보자.
+ -  padding: 10px;
+ - [css11-1.html](https://github.com/hephaex/js/blob/master/02_css/css11-1.html)
+- 좌/우/상/하 간격을 띄워보자.
+ - 1 -> all
+ - 2 -> top&bottom left&right
+ - 3 -> top left&right bottom
+ - 4 -> top right bottom left
+ - padding: 10px 20px 30px 40px;
+ - [css11-2.html](https://github.com/hephaex/js/blob/master/02_css/css11-2.html)
+- 한쪽만 간격을 조정해 보자.
+ - padding-left : 10px;
+ - marging : 20px;
+ - [css11-3.html](https://github.com/hephaex/js/blob/master/02_css/css11-3.html)
+ - [css11-4.html](https://github.com/hephaex/js/blob/master/02_css/css11-4.html)
+
