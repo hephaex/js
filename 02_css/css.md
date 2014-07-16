@@ -400,3 +400,20 @@ body,html {
   - div#menu가 div보다 z-index가 크므로 div#menu가 위에 표시된다.
   - [css14-3.html](https://github.com/hephaex/js/blob/master/02_css/css14-3.html)
 
+## float, clear
+- float : 그림 옆에 문자가 오게 만듬
+```
+img {
+  float : left;
+  }
+```
+  - [css15-1.html](https://github.com/hephaex/js/blob/master/02_css/css15-1.html)
+ - clear : 그림 옆에 문자가 오지 않게 만듬.
+```
+h2 {
+      clear: left;
+       /* left right both */
+      }
+```
+  - [css15-2.html](https://github.com/hephaex/js/blob/master/02_css/css15-2.html)
+
