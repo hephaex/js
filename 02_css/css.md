@@ -348,7 +348,7 @@ body,html {
 - 가로에 세로의 폭을 블록으로 지정할때는 inline-block을 사용한다.
   - [css12-3.html](https://github.com/hephaex/js/blob/master/02_css/css12-3.html)
 - 표시하고 싶지 않을 때는 none을 사용한다.
-o  - [css12-4.html](https://github.com/hephaex/js/blob/master/02_css/css12-4.html)
+  - [css12-4.html](https://github.com/hephaex/js/blob/master/02_css/css12-4.html)
 - overflow
  - 요소 안에서 표시 영역을 지정하는 overflow
  - 영역을 넘어갈 때
@@ -370,4 +370,33 @@ o  - [css12-4.html](https://github.com/hephaex/js/blob/master/02_css/css12-4.htm
   - [css13-2.html](https://github.com/hephaex/js/blob/master/02_css/css13-2.html)
 - 'hi'를 오른쪽 아래에 조금 어긋나게 표현해 보자.
   - [css13-3.html](https://github.com/hephaex/js/blob/master/02_css/css13-3.html)
+
+## z-index
+- 스크롤을 하여도 위치가 바뀌지 않게 만들어 보자.
+  - div#menu를 만들자.
+  - <div id="menu"> Menu </div>
+  - 스타일에서 div#menu속성을 정의하자.
+  - 여기서는 fixed를 사용해 보자.
+``` 
+      div#menu {
+        position: fixed;
+        bottom: 0;
+        background: blue;
+        color: white;
+        width: 100%;
+        height: 50px;
+      }
+```
+  - 스크롤을 해도 div#menu는 고정된다.
+  - [css14-1.html](https://github.com/hephaex/js/blob/master/02_css/css14-1.html)
+- menu를 아래에서 위로 옴길 수도 있다.
+  - bottom: 0; --> top: 0;으로 바꾼다.
+  - [css14-2.html](https://github.com/hephaex/js/blob/master/02_css/css14-2.html)
+- z-index
+  - static 이외 표시 순서를 표현함
+  - 크기가 클 수록 윗쪽에 표시
+  - div는 z-index: 1;
+  - div#menu는 z-index: 2;
+  - div#menu가 div보다 z-index가 크므로 div#menu가 위에 표시된다.
+  - [css14-3.html](https://github.com/hephaex/js/blob/master/02_css/css14-3.html)
 
