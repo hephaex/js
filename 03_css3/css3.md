@@ -110,3 +110,11 @@
  - [css8-3.html](https://github.com/hephaex/js/blob/master/03_css3/css8-3.html)
 - background: linear-gradient(45deg, red, blue);
  - [css8-4.html](https://github.com/hephaex/js/blob/master/03_css3/css8-4.html)
+- background: radial-gradient(red,blue);
+ - [css9-1.html](https://github.com/hephaex/js/blob/master/03_css3/css9-1.html)
+- background: radial-gradient(red,yellow,blue);
+ - [css9-2.html](https://github.com/hephaex/js/blob/master/03_css3/css9-2.html)
+- background: radial-gradient(top right,red,yellow,blue);
+ - [css9-3.html](https://github.com/hephaex/js/blob/master/03_css3/css9-3.html)
+- background: radial-gradient(10px 10px,circle contain,red,yellow 90%);
+ - [css9-4.html](https://github.com/hephaex/js/blob/master/03_css3/css9-4.html)
