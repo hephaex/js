@@ -160,3 +160,48 @@
 - skew : x축,Y축으로 찌그러지기
   - -webkit-transform: skew(45deg, 20deg);
   - [css11-5.html](https://github.com/hephaex/js/blob/master/03_css3/css11-5.html)
+  
+## 애니메이션을 넣어 보자.
+```
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title> CSS3 공부 </title>
+  <style>
+    div {
+      width : 100px;
+      height : 100px;
+      padding : 10px;
+      margin: 30px;
+      background-color: orange;
+      border: 2px solid orangered;
+    -webkit-transition-property:all;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function:ease;
+    /* linear, ease-in, ease-out, ease-in-out */
+    -webkit-transition-delay: 2s;
+    }
+    div:hover {
+    height 200px;
+    background-color:red;
+    }
+  </style>
+</head>
+<body>
+  <div id="test1"> test1 </div>
+</body>
+</html>
+```
+- [css12-1.html](https://github.com/hephaex/js/blob/master/03_css3/css12-1.html)
+- 변화할 방향지정
+  - -webkit-transition-property:all;
+- 변화할 기간
+  - -webkit-transition-duration: 1s;
+- 변화 방법
+  - -webkit-transition-timing-function:ease;
+  - /* linear, ease-in, ease-out, ease-in-out */
+  - [css12-2.html](https://github.com/hephaex/js/blob/master/03_css3/css12-2.html)
+- 한번에 쓸 경우
+  - translation: all 1s ease 2s;
+  - [css12-3.html](https://github.com/hephaex/js/blob/master/03_css3/css12-3.html)
