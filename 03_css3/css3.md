@@ -99,3 +99,14 @@
 - text-shadow: 1px 1px 0px white, 2px 2px 0 black;
  - 까망과 하얀 그림자가 생김.
  - [css7-3.html](https://github.com/hephaex/js/blob/master/03_css3/css7-3.html)
+ 
+## 문자에 그라데이션을 넣어 보자.
+- background: -webkit-linear-gradent();
+- background: linear-gradient(red 10%,yellow 90%, blue 10%);
+ - [css8-1.html](https://github.com/hephaex/js/blob/master/03_css3/css8-1.html)
+- background: linear-gradient(red 10px, yello 90px, blue);
+ - [css8-2.html](https://github.com/hephaex/js/blob/master/03_css3/css8-2.html)
+- background: linear-gradient(right top, red, blue);
+ - [css8-3.html](https://github.com/hephaex/js/blob/master/03_css3/css8-3.html)
+- background: linear-gradient(45deg, red, blue);
+ - [css8-4.html](https://github.com/hephaex/js/blob/master/03_css3/css8-4.html)
