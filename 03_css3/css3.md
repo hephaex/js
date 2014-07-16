@@ -88,3 +88,14 @@
                 5px 5px  5px red;
   - 다중 효과 지정도 가능함.
   - [css6-6.html](https://github.com/hephaex/js/blob/master/03_css3/css6-6.html)
+  
+## 문자에 그림자를 넣어 보자.
+- text-shadow: 5px 5px 3px red;
+ - 빨간색 그림자가 생김.
+ - [css7-1.html](https://github.com/hephaex/js/blob/master/03_css3/css7-1.html)
+- text-shadow: 5px 5px 3px red, 10px 10px 3px blue;
+ - 빨간색과 파란 그림자가 생김.
+ - [css7-2.html](https://github.com/hephaex/js/blob/master/03_css3/css7-2.html)
+- text-shadow: 1px 1px 0px white, 2px 2px 0 black;
+ - 까망과 하얀 그림자가 생김.
+ - [css7-3.html](https://github.com/hephaex/js/blob/master/03_css3/css7-3.html)
