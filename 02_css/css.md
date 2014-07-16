@@ -438,3 +438,14 @@ h2 {
 ```
  - [css16-3.html](https://github.com/hephaex/js/blob/master/02_css/css16-3.html)
 
+## cursor
+- 해당 스타일에 들어가면 cursor 모양을 바꿈.
+ - cursor : move
+ - move
+  - [css17-1.html](https://github.com/hephaex/js/blob/master/02_css/css17-1.html)
+ - help
+  - [css17-2.html](https://github.com/hephaex/js/blob/master/02_css/css17-2.html)
+ - wait
+  - [css17-3.html](https://github.com/hephaex/js/blob/master/02_css/css17-3.html)
+ - pointer
+  - [css17-4.html](https://github.com/hephaex/js/blob/master/02_css/css17-4.html)
