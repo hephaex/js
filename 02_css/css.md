@@ -417,3 +417,24 @@ h2 {
 ```
   - [css15-2.html](https://github.com/hephaex/js/blob/master/02_css/css15-2.html)
 
+## list-style
+- list-style-type  마커의 종류
+  - list-style-type: circle;
+  - list-style-type: square;
+  - list-style-type: number;
+  - [css16-1.html](https://github.com/hephaex/js/blob/master/02_css/css16-1.html)
+- list-style-position 마커의 위치
+  - list-sytle-position: outside;
+  - list-style-position: inside;
+  - [css16-2.html](https://github.com/hephaex/js/blob/master/02_css/css16-2.html)
+- list-style-image 마커를 그림으로 표시
+  - list-style: url('xxx.xxx') outside;
+```
+<style>
+ ul {
+  list-style : url('bg.png') outside;
+  }
+</style>
+```
+ - [css16-3.html](https://github.com/hephaex/js/blob/master/02_css/css16-3.html)
+
