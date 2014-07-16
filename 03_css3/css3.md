@@ -67,3 +67,24 @@
 - 투명도
   - opacity: 0.0 ~ 1.0; 까지 투명도 지정
   - [css5-2.html](https://github.com/hephaex/js/blob/master/03_css3/css5-2.html)
+
+## box 요소를 꾸미기
+- box-shadow : 10px 20px;
+  - 박스의 그림자를 표시
+  - [css6-1.html](https://github.com/hephaex/js/blob/master/03_css3/css6-1.html)  
+- box-shadow : 10px 20px 5px;
+  - 마지막 5px는 보캐 효과
+  - [css6-2.html](https://github.com/hephaex/js/blob/master/03_css3/css6-2.html)  
+- box-shadow : 10px 20px 5px rgba(0,0,0,0.3);
+  - 그림자의 투명도를 지정할 수 있음.
+  - [css6-3.html](https://github.com/hephaex/js/blob/master/03_css3/css6-3.html)
+- box-shadow : 10px 20px 5px 20px rgba(0,0,0,0.3);
+  - 그림자의 두께를 표시할 수 있음. (네번째의 20px) 
+  - [css6-4.html](https://github.com/hephaex/js/blob/master/03_css3/css6-4.html)
+- box-shadow : 10px 20px 5px rgba(0,0,0,0.3) inset;
+  - 그림자가 반전되어 표시
+  - [css6-5.html](https://github.com/hephaex/js/blob/master/03_css3/css6-5.html)
+- box-shadow : 10px 20px 5px rgba(0,0,0,0.3) inset, 
+                5px 5px  5px red;
+  - 다중 효과 지정도 가능함.
+  - [css6-6.html](https://github.com/hephaex/js/blob/master/03_css3/css6-6.html)
