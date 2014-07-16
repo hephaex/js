@@ -366,4 +366,8 @@ o  - [css12-4.html](https://github.com/hephaex/js/blob/master/02_css/css12-4.htm
  - fixed
 - new라는 lable을 만들어 요소 배치를 지정해 보자.
   - [css13-1.html](https://github.com/hephaex/js/blob/master/02_css/css13-1.html)
+- div는 position relative로 지정하고, label은 absolute로 지정
+  - [css13-2.html](https://github.com/hephaex/js/blob/master/02_css/css13-2.html)
+- 'hi'를 오른쪽 아래에 조금 어긋나게 표현해 보자.
+  - [css13-3.html](https://github.com/hephaex/js/blob/master/02_css/css13-3.html)
 
