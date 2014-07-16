@@ -50,3 +50,20 @@
  - 우측 상단만 각호를 설정
  - [css3-3.html](https://github.com/hephaex/js/blob/master/03_css3/css3-3.html)
 
+- border-radius : 50%;
+ - 네 모서리가 둥근 박스가 됨
+ - [css4-1.html](https://github.com/hephaex/js/blob/master/03_css3/css4-1.html)
+- backgroud-image:url('baby.jpg');
+  - 두가지를 혼용한 것으로
+  - 원형이 된 것에 아이 그림이 표시됨
+ - [css4-2.html](https://github.com/hephaex/js/blob/master/03_css3/css4-2.html)
+
+## 색 지정과 투명화
+- 색의 지정방법과 요소의 투명화
+- css  rgb  '#ff0000' 으로 사용
+- css3 rgba "#ff000007' 로 사용.
+  - 혹은 background-color: rgba(0,0,0,0.7);
+  - [css5-1.html](https://github.com/hephaex/js/blob/master/03_css3/css5-1.html)
+- 투명도
+  - opacity: 0.0 ~ 1.0; 까지 투명도 지정
+  - [css5-2.html](https://github.com/hephaex/js/blob/master/03_css3/css5-2.html)
