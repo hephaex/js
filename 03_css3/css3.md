@@ -14,3 +14,39 @@
  - border-radius: 5px;
  - webkit-border-radius: 5px;
 - 대응상태 확인 [caniuse.com](http://www.caniuse.com)
+- 예시 [css3-1.html](https://github.com/hephaex/js/blob/master/03_css3/css3-11.html)
+```
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title> CSS3 공부 </title>
+    <style>
+      div {
+      width : 100px;
+      height : 100px;
+      padding : 10px;
+      margin: 30px;
+      background-color: orange;
+      border: 2px solid orangered;
+      border-top-right-radius : 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="test1"> test1 </div>
+  </body>
+</html>
+```
+
+## 원형 각호를 만들어 보자.
+- border-radius : 10px;
+ - 네 꼭지점 모두 각호를 생성
+ - [css3-1.html](https://github.com/hephaex/js/blob/master/03_css3/css3-1.html)
+- border-radius : 10px 20px 30px 40px;
+ - 네 꼭지점을 시계방향으로 각호 크기를 설정
+ - [css3-2.html](https://github.com/hephaex/js/blob/master/03_css3/css3-2.html)
+- border-top-right-radius : 30px;
+ - 우측 상단만 각호를 설정
+ - [css3-3.html](https://github.com/hephaex/js/blob/master/03_css3/css3-3.html)
+
