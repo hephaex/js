@@ -118,3 +118,27 @@
  - [css9-3.html](https://github.com/hephaex/js/blob/master/03_css3/css9-3.html)
 - background: radial-gradient(10px 10px,circle contain,red,yellow 90%);
  - [css9-4.html](https://github.com/hephaex/js/blob/master/03_css3/css9-4.html)
+
+## 요소를 변형해 보자.
+- caniuse.com 에서 transform 을 확인하면 -webkit-으로 머릿말을 붙이라고 한다. 
+ - [css10-1.html](https://github.com/hephaex/js/blob/master/03_css3/css10-1.html)
+- 가로/세로 크기 변화 : 
+  - scale (1.2 가로축, 1.5 세로축) 크기 변화
+  - -webkit-transform: scale(1.2,1.5);
+  - [css10-2.html](https://github.com/hephaex/js/blob/master/03_css3/css10-2.html)
+- 가로만 크기 변화 : 
+  - -webkit-transform: scaleX(1.2);
+  - [css10-3.html](https://github.com/hephaex/js/blob/master/03_css3/css10-3.html)
+- 세로만 크기 변화 : 
+  - -webkit-transform: scaleY(1.2);
+  - [css10-4.html](https://github.com/hephaex/js/blob/master/03_css3/css10-4.html)
+- Z축만 크기 변화 : 
+  - -webkit-transform: scaleZ(1.2);
+  - [css10-5.html](https://github.com/hephaex/js/blob/master/03_css3/css10-5.html)
+- 원점을 바꾸어 보자.
+  - -webkit-transform: origin: 0 0;
+  - -webkit-transform: scale(1.2, 1.5);
+  - [css10-6.html](https://github.com/hephaex/js/blob/master/03_css3/css10-6.html)
+- 3차원 크기 변화 : 
+  - -webkit-transform: scale3d(1.2, 1.5, 1.7);
+  - [css10-7.html](https://github.com/hephaex/js/blob/master/03_css3/css10-7.html)
