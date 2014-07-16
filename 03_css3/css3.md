@@ -195,3 +195,54 @@
 ```
 - [css14.html](https://github.com/hephaex/js/blob/master/03_css3/css14.html)
 
+## 속성 셀렉터를 사용해 보자
+```
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title> CSS3 공부 </title>
+  <style>
+    a[href="http://dotinstall.com"] {
+     color:yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1> links </h1>
+  <ul>
+    <li> <a href="http://dotinstall.com">dotinstall.com</a></li>
+    <li> <a href="http://google.com">google.com</a></li>
+    <li> <a href="http://yahoo.co.jp">yahoo.co.jp</a></li>
+    <li> <a href="mailto:hephaex@gmail.com">mail to me</a></li>
+  </ul>
+</body>
+</html>
+```
+- <style> </style>에서 속성을 지정한다.
+- 예시 1 (특정)
+```
+     a[href="http://dotinstall.com"] {
+     color:yellow;
+    }
+```
+- 예시 2 (전부)
+```
+     a[href*="com"] {
+     color:yellow;
+    }
+```
+- 예시 3 (전방참조)
+```
+     a[href^="http"] {
+     color:yellow;
+    }
+```
+- 예시 4 (후방참조)
+```
+     a[href$="jp"] {
+     color:yellow;
+    }
+```
+- [css15.html](https://github.com/hephaex/js/blob/master/03_css3/css15.html)
+
