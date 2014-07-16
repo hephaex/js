@@ -336,3 +336,51 @@
 ```
 - [css16.html](https://github.com/hephaex/js/blob/master/03_css3/css16.html)
 
+## 요소의 상태를 지정하는 셀렉터
+```
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title> CSS3 공부 </title>
+  <style>
+    input[type="text"]:disabled {
+    font-weight:bold;
+    } 
+    input[type="text"]:enabled {
+    border:1px solid red;
+    }
+    input[type="radio"]:checked + label{
+    font-weight:bold;
+    }
+  </style>
+</head>
+<body>
+<div>  
+  <h1> example </h1>
+  <p>Username <input type="text" name="user_name" value="hephaex" disabled></p>
+  <p>Email: <input type="text" name="email"></p>
+  <p>
+    <input type="radio" name="opt1" value="1"> <label> iPhone </label>
+    <input type="radio" name="opt1" value="2"> <label> Android></label>
+  </p>
+</div>
+</body>
+</html>
+```
+- [css17.html](https://github.com/hephaex/js/blob/master/03_css3/css17.html)
+
+- 특정 요소를 선택하고 속성을 지정할수 있다.
+```
+    input[type="text"]:disabled {
+    font-weight:bold;
+    } 
+    input[type="text"]:enabled {
+    border:1px solid red;
+    }
+    input[type="radio"]:checked + label{
+    font-weight:bold;
+    }
+```
+
+- [css18.html](https://github.com/hephaex/js/blob/master/03_css3/css18.html)
