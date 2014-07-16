@@ -142,3 +142,21 @@
 - 3차원 크기 변화 : 
   - -webkit-transform: scale3d(1.2, 1.5, 1.7);
   - [css10-7.html](https://github.com/hephaex/js/blob/master/03_css3/css10-7.html)
+- 중심축을 바꾸어 보자.
+  - -webkit-transform-origin: top left;
+  - -webkit-transform-origin: 10px 10px;
+- X축으로 이동
+  - -webkit-transform: translateX(20px);
+  - [css11-1.html](https://github.com/hephaex/js/blob/master/03_css3/css11-1.html)  
+- X축, Y축으로 이동
+  - -webkit-transform: translate(20px, 100px);
+  - [css11-2.html](https://github.com/hephaex/js/blob/master/03_css3/css11-2.html)
+- 45도 회전
+  - -webkit-transform: rotate(45deg);
+  - [css11-3.html](https://github.com/hephaex/js/blob/master/03_css3/css11-3.html)
+- skewX : X축으로 찌그러지기
+  - -webkit-transform: skewX(45deg);
+  - [css11-4.html](https://github.com/hephaex/js/blob/master/03_css3/css11-4.html)
+- skew : x축,Y축으로 찌그러지기
+  - -webkit-transform: skew(45deg, 20deg);
+  - [css11-5.html](https://github.com/hephaex/js/blob/master/03_css3/css11-5.html)
