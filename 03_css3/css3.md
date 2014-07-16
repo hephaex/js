@@ -246,3 +246,93 @@
 ```
 - [css15.html](https://github.com/hephaex/js/blob/master/03_css3/css15.html)
 
+## n번재 요소를 지정해보자.
+```
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title> CSS3 공부 </title>
+  <style>
+    /* nth-child */
+    div p:nth-child(2) {
+    color:red;
+    }
+  </style>
+</head>
+<body>
+<div>  
+  <h1> example </h1>
+  <p>안녕하세요.</p>
+  <p>안녕하세요.</p>
+  <p>안녕하세요.</p>
+  <h2> middle </h2>
+  <p>안녕하세요.</p>
+  <p>안녕하세요.</p>
+  <h2> middle </h2>
+  <p>안녕하세요.</p>
+  <p>안녕하세요.</p>
+  <p>안녕하세요.</p>
+<p>안녕하세요.</p>
+</div>
+</body>
+</html>
+```
+- 2번째 p요소를 지정
+```
+    div p:nth-child(2) {
+    color:red;
+    }
+```
+- 5번째 p요소를 지정
+```
+    div p:nth-child(5) {
+    color:red;
+    }
+```
+- 5번째 모든 요소를 지정
+```
+    div p:nth-child(5) {
+    color:red;
+    }
+```
+
+- 홀수번째 모든 요소를 지정
+```
+    div *:nth-child(odd) {
+    color:red;
+    }
+```
+
+- 3n+1번째 모든 요소를 지정
+```
+    div *:nth-child(3n+1) {
+    color:red;
+    }
+```
+- 마지막 모든 요소를 지정
+```
+    div *:last-child(odd) {
+    color:red;
+    }
+```
+- 단 하나의 모든 요소를 지정
+```
+    div *:only-child(odd) {
+    color:red;
+    }
+```
+- 어떤 요소에서 n번째를 요소를 지정
+```
+    div p:nth-of-type(2) {
+    color:red;
+    }
+```
+- 어떤 요소에서 첫번째를 요소를 지정
+```
+    div p:first-of-type {
+    color:red;
+    }
+```
+- [css16.html](https://github.com/hephaex/js/blob/master/03_css3/css16.html)
+
