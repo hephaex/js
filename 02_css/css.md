@@ -449,3 +449,27 @@ h2 {
   - [css17-3.html](https://github.com/hephaex/js/blob/master/02_css/css17-3.html)
  - pointer
   - [css17-4.html](https://github.com/hephaex/js/blob/master/02_css/css17-4.html)
+ 
+## 유사 클래스를 사용해 보자
+- 요소가 어떤 특정 상태를 나태낼때 사용
+ - a 태그와 함께 링크에 대하여 변화를 줄때
+   - a:link
+   - a:visited
+   - a:hover
+   - a:active
+   - [css18-1.html](https://github.com/hephaex/js/blob/master/02_css/css18-1.html)
+ - h1 태그에 위치하면 색상을 바꾸고 싶을 때
+   - h1:hover {background: yellow;}
+   - [css18-2.html](https://github.com/hephaex/js/blob/master/02_css/css18-2.html)
+ - 입력시 강조하고 싶을 때
+   - input:focus {background: green;}
+   - [css18-3.html](https://github.com/hephaex/js/blob/master/02_css/css18-3.html)
+- ex)
+```
+    a:link {color: blue;}
+    a:visited {color:gray;}
+    a:hover {font-weight: bold;}
+    a:active {background: red;}
+    h1:hover {background: orange;}
+    input:focus {backgroud: green;}
+```
