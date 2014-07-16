@@ -32,3 +32,59 @@
 ```myscript.js
 console.log("hello from script");
 ```
+
+## 변수를 사용해 보자.
+```
+<!DOCUTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="utf-8">
+ <title>JavaScript 연습</title>
+</head>
+<body>
+  <script>
+    var msg;
+    msg = "hello World";
+    console.log(msg);
+  </script>  
+</body>
+</html>
+```
+- [js3.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js3.html)
+
+## 변수를 사용해 보자.
+- var 으로 변수를 선언한다.
+- ex)
+```
+var msg = "hello world!",
+x = 20,
+y = 10;
+```
+- 데이터 형
+  - 문자열
+  - 수식
+    - 10
+    - 2.5
+    - -2.5
+  - 연산식 
+    - + - * / %
+    - += 대입 연삭식
+    - ++ -- 단순 연산식
+  - 진리식 (true/false)
+  - 오브젝트
+    - 배열
+    - 함수
+    - 내장형 오브젝트
+  - undefined 정의되지 않는다.
+  - null 아무것도 아니다. 
+```
+    var x;
+    x = 10 * 2; //20
+    x = 10 % 3; // 1
+    x = x + 5;  // 6
+    x += 5;     // 10
+    x ++ ;      // 11
+    x -- ;      // 10
+```
+- [js4.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js4.html)
+
