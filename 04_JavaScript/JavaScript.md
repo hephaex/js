@@ -120,3 +120,63 @@ n."           js6.html:19
 "hello wolrd" js6.html:21
 "55"          js6.html:23
 ```
+
+## if문
+- 비교 연산자
+  -  > <
+  -  >= <=
+  -  === ==
+  -  !== !=
+- 논리 연산자
+  - AND &&
+  - OR  ||
+  - NOT !
+  - ex) score > 60 && score < 80 
+- 조건 분기
+  - 사용법
+  if (조건) {
+    참
+  } else {
+    부정 
+  }
+- [js7.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js7.html)
+```
+    var score = 80;
+    if (score > 60) {
+    console.log("ok!");
+    } else {
+    console.log("fail!");
+    }
+```
+
+## 진위문과 삼항연산자
+- 문자열이외라면 true
+- 수치가 0가 NaN이외라면 true
+- true / false
+- object : null 이외라면 true
+- undefined, null -> false
+- if (x) {
+   // 처리
+  }
+- if (x != '') {
+  // 처리 
+  }
+- 삼항연산자. 
+```
+var a, b, c;
+if (조건) {
+a = b;
+} else {
+a = c;
+}
+```
+```
+a = (조건) ? b: c;
+```
+
+```
+var max, x, y;
+max = (x > y) ? x : y;
+```
+- [js8.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js8.html)
+
