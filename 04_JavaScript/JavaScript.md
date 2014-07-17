@@ -400,3 +400,20 @@ var m = [
  ];
 console.log(m[1][1]);
 ``` 
+
+## 오브젝트를 사용해 보자.
+- 배열처럼 그룹화된 데이터
+- 이름과 값이 그룹화
+- [js17.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js17.html)
+```
+var user = {
+ email : "hephaex@gmail.com", //프로퍼디
+ score : 80
+};
+
+console.log(user["email"]);
+console.log(user.email);
+console.log(user.score);
+user.score = 100;
+console.log(user.score);
+```
