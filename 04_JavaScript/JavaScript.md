@@ -363,3 +363,40 @@ function show(){
     show();
 ```
 
+## 배열을 사용해 보자.
+- var score_1 = 100, score_2 = 200;
+- 배열에 숫자를 넣어 보자.
+ - [js16-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js16-1.html)
+```
+var score = [100, 300, 500];
+console.log(score[0]);
+```
+- 배열의 값을 바꿔보자. 
+ - [js16-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js16-2.html)
+```
+var score = [100, 300, 500];
+console.log(score[0]);
+score[2] = 400;
+console.log(score);
+```
+- 배열에 숫자와 문자를 함께 써 보자
+ - [js16-3.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js16-3.html)
+```
+var score = [100, 300, 500, 'alfredo'];
+console.log(score[0]);
+score[2] = 400;
+console.log(score);
+```
+ - [js16-4.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js16-5.html)
+```
+var score = [100, 300, 500, "name"];
+console.log(score[0]);
+score [2] = 400;
+console.log(score);
+
+var m = [  
+  [ 1, 2, 3],
+  [ 4, 5, 6]
+ ];
+console.log(m[1][1]);
+``` 
