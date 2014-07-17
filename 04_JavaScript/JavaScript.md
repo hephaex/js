@@ -201,3 +201,38 @@ max = (x > y) ? x : y;
       break;
     }
 ```
+  
+## 루프 처리
+- while, do ... while
+/*
+  루프 처리
+  while
+  do ... while
+  for
+  break    : 루프 처리 중단
+  continue : 루프 처리 진행
+*/
+- [js10-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js10-1.html) 
+```
+var i = 0;
+while (i < 10) {
+  console.log(i);
+  i++;
+}
+```
+- [js10-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js10-2.html) 
+```
+var i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i < 10);
+```
+- [js10-3.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js10-3.html) 
+```
+for (var i = 0; i < 10; i++) {
+  if ( i == 5) { break; }
+  console.log(i);
+}
+```
+
