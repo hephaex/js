@@ -92,3 +92,31 @@ y = 10;
     x ++ ;      // 11
     x -- ;      // 10
 ```
+
+### 문자열
+- 표현 방식
+- 특수 문자
+- 연산자
+- [js6.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js6.html)
+```
+    var s;
+    s = "hello";
+    s = 'hel\'lo';
+    // \n 개행
+    // \t 탭
+    s = 'it\'s\n a pe\tn.'; //it's   a pe   n
+
+    s = "hello " + "wolrd"; //"hello world"
+
+    s = "5" + 5;   // "55" 문자로 결합된다는 것에 주의
+    console.log(s);
+```
+```
+"hello"       js6.html:11
+"hello"       js6.html:13
+"hel'lo"      js6.html:17
+"it's
+n."           js6.html:19
+"hello wolrd" js6.html:21
+"55"          js6.html:23
+```
