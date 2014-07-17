@@ -66,8 +66,10 @@ console.log("hello from script");
 var msg = "hello world!",
 x = 20,
 y = 10;
-- [js4.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js4.html)
 ```
+- [js4.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js4.html)
+
+
 - 데이터 형
   - 문자열
   - 수식 (10 , - 2.5, -2.5)
@@ -81,8 +83,9 @@ y = 10;
     - 함수
     - 내장형 오브젝트
   - undefined 정의되지 않는다.
-  - null 아무것도 아니다. 
+  - null 아무것도 아니다.
 - [js5.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js5.html)
+
 ```
     var x;
     x = 10 * 2; //20
@@ -98,6 +101,7 @@ y = 10;
 - 특수 문자
 - 연산자
 - [js6.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js6.html)
+
 ```
     var s;
     s = "hello";
@@ -123,10 +127,10 @@ n."           js6.html:19
 
 ## if문
 - 비교 연산자
-  -  > <
-  -  >= <=
-  -  === ==
-  -  !== !=
+  - >   <
+  - >=  <=
+  - === ==
+  - !== !=
 - 논리 연산자
   - AND &&
   - OR  ||
@@ -140,6 +144,7 @@ n."           js6.html:19
     부정 
   }
 - [js7.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js7.html)
+
 ```
     var score = 80;
     if (score > 60) {
@@ -162,6 +167,7 @@ n."           js6.html:19
   // 처리 
   }
 - 삼항연산자. 
+
 ```
 var a, b, c;
 if (조건) {
@@ -254,7 +260,8 @@ for (var i = 0; i < 10; i++) {
    처리 
    return 반환값
   }
-  - [js12-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js12-1.html)
+[js12-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js12-1.html)
+
 ```
 function hello(name){
  return ("hello" + name);
@@ -262,8 +269,10 @@ function hello(name){
 var great = hello("foo");
 console.log(great);
 ```
-  - [js12-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js12-2.html)
-  - [js12-3.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js12-3.html)
+
+- [js12-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js12-2.html)
+
+- [js12-3.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js12-3.html)
 
 - 지역함수를 사용해 보자.
   - [js13-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js13-1.html)
@@ -324,6 +333,7 @@ console.log(msg);
   - 일정시간에 한번만 실행,
   - 앞의 처리이후 실행
   - [js15-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js15-2.html)
+
 ```
 var i = 0;
     function show(){
@@ -337,7 +347,9 @@ var i = 0;
     }, 1000);
     show();
 ```
+
 - [js15-3.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js15-3.html)
+
 ```
 var i = 0;
 function show(){
@@ -350,6 +362,7 @@ function show(){
 ```
 - 조건문 (3초 이상이면 정지)를 넣어보자. 
 - [js15-4.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js15-4.html)
+
 ```
     var i = 0;
     function show(){
@@ -367,12 +380,14 @@ function show(){
 - var score_1 = 100, score_2 = 200;
 - 배열에 숫자를 넣어 보자.
  - [js16-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js16-1.html)
+
 ```
 var score = [100, 300, 500];
 console.log(score[0]);
 ```
 - 배열의 값을 바꿔보자. 
  - [js16-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js16-2.html)
+
 ```
 var score = [100, 300, 500];
 console.log(score[0]);
@@ -381,6 +396,7 @@ console.log(score);
 ```
 - 배열에 숫자와 문자를 함께 써 보자
  - [js16-3.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js16-3.html)
+
 ```
 var score = [100, 300, 500, 'alfredo'];
 console.log(score[0]);
@@ -388,6 +404,7 @@ score[2] = 400;
 console.log(score);
 ```
  - [js16-4.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js16-5.html)
+
 ```
 var score = [100, 300, 500, "name"];
 console.log(score[0]);
@@ -410,6 +427,7 @@ console.log(m[1][1]);
   - console.log(user.email);
 - [js17.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js17.html)
 - 오브젝트 선언
+
 ```
 var user = {
  email : "hephaex@gmail.com", //프로퍼디
@@ -417,6 +435,7 @@ var user = {
 };
 ```
 - 오브젝트 처리
+
 ```
 console.log(user["email"]); 
 console.log(user.email);
@@ -431,6 +450,7 @@ console.log(user.score);
  - great 에서 this.email 참조
 - 오브젝트 안에서 함수를 선언한 것을 메소드라고 한다.
 - [js18-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js18-1.html)
+
 ```
 var user = {
  email : "hephaex@gmail.com", //프로퍼디
@@ -443,6 +463,7 @@ var user = {
 - 오브젝트 안에 요소를 참조할 때 this를 사용한다.
  - this.email
 - [js18-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js18-2.html)
+
 ```
 var user = {
   email: "hephaex@gmail.com", //프로퍼티
@@ -460,6 +481,7 @@ user.greet("tom");
 - Math
 - Date
 - [js19.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js19.html)
+
 ```
 // var s = "hephaex";  // 문자열 리테럴
 var s = new String("hephaex"); //문자열 오프젝트
@@ -471,6 +493,7 @@ console.log(s.substr(1,3));
 
 - 배열 오브젝트를 사용해 보자. 
 - [js20.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js20.html)
+
 ```
 var a = new Array(100,300,200);
 // var a = [100,300,200];
@@ -488,6 +511,7 @@ console.log(a); // 100 800 1000
 
 - Math object는 new를 사용하지 않고 바로 사용
 - [js21-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js21-1.html)
+
 ```
 console.log(Math.PI);
 console.log(Math.ceil(5.3)); // 반올림
@@ -499,6 +523,7 @@ console.log(Math.random());   // 임의의 수
 - Date 오브젝트를 사용해보자.
 - 월은 0월부터 시작하므로 2월은 1이다. 
 - [js21-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js21-2.html)
+
 ```
 var d = new Data();
 // vad d = new Data(2014, 1, 11, 10, 20, 30);
@@ -514,12 +539,12 @@ console.log(d1.getTime());
 ## window Object
 - Document Object
 - [js22-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js22-1.html)
+
 ```
 console.dir(window);
 console.log(window.outerHeight); // 사용자 윈도 크기를 구함
 ```
 - [js22-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js22-2.html)
-
 - window.location.href = 'http://manseok.blogspot.com';
 - window.document // 지금 보고 있는 페이지
 
@@ -567,8 +592,9 @@ console.log(window.outerHeight); // 사용자 윈도 크기를 구함
 - 버튼을 만들고 클릭할때 add라는 id를 생성하게 하자
  - <button id='add'> Click </button>
 - DOM을 이용해서 id='add'일 때 문자열을 추가해 보자.
- - document.getElementById('add').addEventListener('click',function(){
+ -"document.getElementById('add').addEventListener('click',function()"
 - [js24.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js24.html)
+
 ```
 <!DOCUTYPE html>
 <html lang="ko">
