@@ -404,16 +404,84 @@ console.log(m[1][1]);
 ## 오브젝트를 사용해 보자.
 - 배열처럼 그룹화된 데이터
 - 이름과 값이 그룹화
+- 배열처럼 호출
+  - console.log(user["email"]);
+- 포인터 처럼 호출
+  - console.log(user.email);
 - [js17.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js17.html)
+- 오브젝트 선언
 ```
 var user = {
  email : "hephaex@gmail.com", //프로퍼디
  score : 80
 };
-
-console.log(user["email"]);
+```
+- 오브젝트 처리
+```
+console.log(user["email"]); 
 console.log(user.email);
 console.log(user.score);
 user.score = 100;
 console.log(user.score);
 ```
+
+## 메소드를 사용해 보자.
+- 프로퍼티에 함수를 사용할수도 있다. 
+- 메쏘드는 자신의 오브젝트를 가리키는 this를 사용 다른 프로퍼티를 참조할수 있다. 
+ - great 에서 this.email 참조
+- 오브젝트 안에서 함수를 선언한 것을 메소드라고 한다.
+- [js18-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js18-1.html)
+```
+var user = {
+ email : "hephaex@gmail.com", //프로퍼디
+ score : 80
+ great : function(name) { // 메소드
+  console.log("hello" + name + "from " + this.email );
+ }
+};
+- 오브젝트 안에 요소를 참조할 때 this를 사용한다.
+ - this.email
+- [js18-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js18-2.html)
+```
+var user = {
+  email: "hephaex@gmail.com", //프로퍼티
+  score: 89,
+  greet: function(name) {
+    console.log("hello, " + name + " from" + this.email);
+  }
+};
+user.greet("tom");
+```
+
+## string 내장형 오브젝트
+- String
+- Array
+- Math
+- Date
+- [js19.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js19.html)
+```
+// var s = "hephaex";  // 문자열 리테럴
+var s = new String("hephaex"); //문자열 오프젝트
+
+console.log(s.length); // 8
+console.log(s.replace("t","T")); //대문자로
+console.log(s.substr(1,3));
+```
+
+- 배열 오브젝트를 사용해 보자. 
+- [js20.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js20.html)
+```
+var a = new Array(100,300,200);
+// var a = [100,300,200];
+
+console.log(a.length); // 3
+// unshift -> array <- push
+// shift <- array -> pop
+a.push(500);
+console.log(a); // 100 300 200 500
+a.splice(1,2); // 300 200 삭제
+console.log(a); // 100 500
+a.splice(1,2, 800,1000);  
+console.log(a); // 100 800 1000 
+```
+
