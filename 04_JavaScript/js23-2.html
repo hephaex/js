@@ -1,0 +1,26 @@
+<!DOCUTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript 연습</title>
+    <style>
+      .myStyle {
+        font-weight: bold;
+        border: 1px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1> 안녕하세요.</h1>
+    <p id="msg"> 안녕하세요.!</p>
+    <script>
+      var e = document.getElementById('msg');
+      e.textContent = 'hello!';
+      e.style.color = 'red';
+      e.className = 'myStyle';
+      var greet = document.createElement('p'),
+          text = document.createTextNode('hello world');
+      document.body.appendChild(greet).appendChild(text);
+    </script>  
+  </body>>
+</html>

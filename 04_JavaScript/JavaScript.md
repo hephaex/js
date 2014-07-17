@@ -521,3 +521,43 @@ console.log(window.outerHeight); // 사용자 윈도 크기를 구함
 
 - window.location.href = 'http://manseok.blogspot.com';
 - window.document // 지금 보고 있는 페이지
+
+## DOM
+- document object model (DOM)
+- document 만으로도 사용가능
+- [js23-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js23-1.html)
+
+```
+<!DOCUTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="utf-8">
+ <title>JavaScript 연습</title>
+ <style>
+  .myStyle {
+   font-weigh : bold;
+   border: 1px solid gray;
+  }
+ </style>
+</head>
+<body>
+  <h1> example 보기 </h1>
+  <p id="msg"> 안녕하세요 </p>
+  <script>
+    var e = document.getElementById('msg');
+    e.textContect = "hello";
+    e.style.colr = 'red';
+    e.className = 'myStyle';
+    /*  
+      body
+          p 
+            text
+    */
+    var great = document.createElement('p'),
+        text  = document.createTextNode('hello world');
+    document.body.appendChild(great).appendChild(text);
+ </script>
+</body>
+</html>
+```
+- [js23-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js23-2.html)
