@@ -265,3 +265,53 @@ console.log(great);
   - [js12-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js12-2.html)
   - [js12-3.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js12-3.html)
 
+- 지역함수를 사용해 보자.
+  - [js13-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js13-1.html)
+```
+function hello1(name) {
+  var msg = "hello " + name; 
+  return msg;
+}
+var hello2 = function (name) {
+  var msg = "hello " + name; 
+  return msg;
+};
+var greet = hello1("tom");
+console.log(great);
+console.log(hello2="bar");
+console.log(msg);
+```
+  - [js13-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js13-2.html)
+
+- 즉시함수를 사용해 보자.
+  - (함수{ ...} ) (); 로 즉시 함수가 실행됨.
+  - [js14-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js14-1.html)
+```
+(function hello(){
+  console.log("hello ");
+})();
+```
+  - 매개변수로 즉시 함수를 호출 하면.  
+  - [js14-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js14-2.html) 
+```
+(function hello(name){
+  console.log("hello "+name);
+})("tom");
+```
+  - 함수명을 생략할 수도 있다. 
+  - [js14-3.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js14-3.html) 
+```
+(function (name){
+  console.log("hello "+name);
+})("tom");
+```
+  - 로컬 변수처럼 사용하는데도 사용한다.
+  - [js14-4.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js14-4.html)
+```
+(function (){
+  var x = 10,
+  y = 20;
+  console.log(x + y);
+})();
+```
+
