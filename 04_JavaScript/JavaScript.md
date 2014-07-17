@@ -485,3 +485,27 @@ a.splice(1,2, 800,1000);
 console.log(a); // 100 800 1000 
 ```
 
+- Math object는 new를 사용하지 않고 바로 사용
+- [js21-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js21-1.html)
+```
+console.log(Math.PI);
+console.log(Math.ceil(5.3)); // 반올림
+console.log(Math.floor(5.3)); // 내림
+console.log(Math.round(5.3)); // 올림
+console.log(Math.random());   // 임의의 수
+```
+
+- Date 오브젝트를 사용해보자.
+- 월은 0월부터 시작하므로 2월은 1이다. 
+- [js21-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js21-2.html)
+```
+var d = new Data();
+// vad d = new Data(2014, 1, 11, 10, 20, 30);
+var d1 = new Data(2014, 1, 11, 10, 20,30);
+console.log(d.getFullYear()); //년을 표시
+console.log(d.getMonth());  //월을 표시
+console.log(d.getTime()); // 1970년 1월 1일부터 경과한 mSec
+console.log(d1.getFullyYear());
+console.log(d1.getMonth());
+console.log(d1.getTime());
+```
