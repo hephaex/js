@@ -180,3 +180,24 @@ max = (x > y) ? x : y;
 ```
 - [js8.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js8.html)
 
+## switch 문을 사용해 보자.
+- switch
+- [js9.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js9.html) 
+```
+  var signal = "blue" ;
+  switch (signal) {
+      case "red":
+      console.log("stop!");
+      break;
+      case "green":
+      case "blue":
+      console.log("Go !");
+      break;
+      case "yellow":
+      console.log("slow down !");
+      break;
+      default :
+      console.log("wrong signal !");
+      break;
+    }
+```
