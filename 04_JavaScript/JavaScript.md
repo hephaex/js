@@ -509,3 +509,15 @@ console.log(d1.getFullyYear());
 console.log(d1.getMonth());
 console.log(d1.getTime());
 ```
+
+## window Object
+- Document Object
+- [js22-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js22-1.html)
+```
+console.dir(window);
+console.log(window.outerHeight); // 사용자 윈도 크기를 구함
+```
+- [js22-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js22-2.html)
+
+- window.location.href = 'http://manseok.blogspot.com';
+- window.document // 지금 보고 있는 페이지
