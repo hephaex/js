@@ -236,3 +236,32 @@ for (var i = 0; i < 10; i++) {
 }
 ```
 
+## 알림 표시
+- alert : 알림 메시지 박스 표시
+  - alert("hello");
+- confirm :
+  - var answer = confirm("are you sure?");
+    console.log(answer);
+  - [js11-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js11-1.html)
+- promt :
+  - var name = prompt("Input your name?", "name" );
+    console.log(name);
+  - [js11-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js11-2.html)
+
+## 함수
+- 복수의 처리를 하는 묶음.
+- function 함수명(매개변수) {
+   처리 
+   return 반환값
+  }
+  - [js12-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js12-1.html)
+```
+function hello(name){
+ return ("hello" + name);
+}
+var great = hello("foo");
+console.log(great);
+```
+  - [js12-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js12-2.html)
+  - [js12-3.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js12-3.html)
+
