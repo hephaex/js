@@ -1,0 +1,19 @@
+<!DOCUTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript 연습</title>
+  </head>
+  <body>
+    <script>
+      var i = 0;
+      function show() {
+        console.log(i++);
+        setTimeout(function() {
+         show();
+        }, 1000);
+      }
+      show();
+    </script>  
+  </body>>
+</html>

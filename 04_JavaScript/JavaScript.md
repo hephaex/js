@@ -315,3 +315,51 @@ console.log(msg);
 })();
 ```
 
+## timer 처리
+- seInterval :
+  - 일정시간 동안 반복,
+  - 앞에 처리에 상관 없이실행
+  - [js15-1.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js15-1.html)
+- setTimeout :
+  - 일정시간에 한번만 실행,
+  - 앞의 처리이후 실행
+  - [js15-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js15-2.html)
+```
+var i = 0;
+    function show(){
+    console.log(i++);
+    }
+    setInterval(function() {
+    show();
+    }, 1000);
+    setTimeout(function() {
+    show();
+    }, 1000);
+    show();
+```
+- [js15-3.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js15-3.html)
+```
+var i = 0;
+function show(){
+ console.log(i++);
+ setTimeout(function() {
+ show();
+ }, 1000);
+}
+ show();
+```
+- 조건문 (3초 이상이면 정지)를 넣어보자. 
+- [js15-4.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js15-4.html)
+```
+    var i = 0;
+    function show(){
+    console.log(i++);
+    var tid setTimeout(function() {
+    show();
+    }, 1000);
+    if (i > 3) {
+     clearTimeout(tid);
+    }
+    show();
+```
+
