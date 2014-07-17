@@ -561,3 +561,36 @@ console.log(window.outerHeight); // 사용자 윈도 크기를 구함
 </html>
 ```
 - [js23-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js23-2.html)
+## 이벤트를 설정해보자.
+- 버튼을 만들고 클릭할때 add라는 id를 생성하게 하자
+ - <button id='add'> Click </button>
+- DOM을 이용해서 id='add'일 때 문자열을 추가해 보자.
+ - document.getElementById('add').addEventListener('click',function(){
+- [js24.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js24.html)
+```
+<!DOCUTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="utf-8">
+ <title>JavaScript 연습</title>
+</head>
+<body>
+  <h1> example 보기 </h1>
+  <p id="msg"> 안녕하세요 </p>
+  <button id="add"> Click ! </button>
+  <script>
+   var e = document.getElementById('msg');
+   e.textContent = 'hello! ';
+   e.style.color = 'red';
+   e.className = 'myStyle';
+
+
+   document.getElementById('add').addEventListener('click', function(){
+    var great = document.createElement('p'),
+       text  = document.createTextNode('hello world');
+   document.body.appendChild(great).appendChild(text);
+   });
+  </script>  
+</body>
+</html>
+```
