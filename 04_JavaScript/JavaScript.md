@@ -439,6 +439,7 @@ var user = {
   console.log("hello" + name + "from " + this.email );
  }
 };
+```
 - 오브젝트 안에 요소를 참조할 때 this를 사용한다.
  - this.email
 - [js18-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js18-2.html)
@@ -561,6 +562,7 @@ console.log(window.outerHeight); // 사용자 윈도 크기를 구함
 </html>
 ```
 - [js23-2.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js23-2.html)
+
 ## 이벤트를 설정해보자.
 - 버튼을 만들고 클릭할때 add라는 id를 생성하게 하자
  - <button id='add'> Click </button>
