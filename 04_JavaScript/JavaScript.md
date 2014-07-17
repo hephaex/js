@@ -66,6 +66,7 @@ console.log("hello from script");
 var msg = "hello world!",
 x = 20,
 y = 10;
+- [js4.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js4.html)
 ```
 - 데이터 형
   - 문자열
@@ -81,7 +82,7 @@ y = 10;
     - 내장형 오브젝트
   - undefined 정의되지 않는다.
   - null 아무것도 아니다. 
-- [js4.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js4.html)
+- [js5.html](https://github.com/hephaex/js/blob/master/04_JavaScript/js5.html)
 ```
     var x;
     x = 10 * 2; //20
@@ -91,4 +92,3 @@ y = 10;
     x ++ ;      // 11
     x -- ;      // 10
 ```
-
