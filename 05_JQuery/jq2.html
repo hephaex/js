@@ -1,0 +1,21 @@
+<!DOCUTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title> JQuery </title>
+</head>
+<body>
+  <p> JQuery 연습 </p>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script>
+    // $(document).ready(function() {
+    $(function() {
+    // 셀렉터 : 처리대상이 되는 DOM요소를 지정하는 방법
+    // 메쏘드 : 처리
+    // 메쏘드체인 : 여러 처리를 함께 붙여서 처리하는 것
+      $('p').css('color','red').hide('slow');
+    });
+  </script>
+</body>
+</html>
+
