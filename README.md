@@ -6,7 +6,7 @@
 ## 02_css
 웹페이지의 스타일에 구성하는 CSS에 대하여 정리.
 
-## 03_css3
+## [03_CSS3](https://github.com/hephaex/js/blob/master/03_css3/css3.md)
 웹페이지의 스타일에 구성하는 향상된 CSS3에 대하여 정리.
 
 ## [04_JavaScript](https://github.com/hephaex/js/blob/master/04_JavaScript/JavaScript.md)
