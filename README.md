@@ -14,7 +14,8 @@
  - 변수, 타이머, object, 메쏘드, DOM, 이벤트
 
 ## [05_JQuery](https://github.com/hephaex/js/blob/master/05_JQuery/jquery.md) 
-
+- JavaScript를 편리하게 사용하기 위한 라이브러리
+- 공식사이트 : [JQuery](http://www.jquery.com)
 
 
 
