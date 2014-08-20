@@ -1,0 +1,40 @@
+<!DOCUTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title> JQuery </title>
+</head>
+<body>
+  <p> JQuery 연습 </p>
+  <ul>
+    <li>0</li>
+    <li class="dan">1</li>
+    <li class="dan">2</li>
+    <li>
+      3
+      <ul id="sub">
+	<li> 3-0 </li>
+	<li> 3-1 </li>
+    	<li class="item"> 3-2 </li>
+    	<li class="item"> 3-3 </li>
+    	<li> 3-4 </li>
+      </ul>
+    </li>
+  </ul>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script>
+    $(function() {
+    // 셀렉터.메쏘드
+    // $("")
+    // html 요소 p, h1, ul
+    // id   요소 #main
+    // class     .item
+    $("#sub").css('color','red');
+    $(".item").css('color','green');
+    $(".dan").css('color','blue');
+    $("p").css('color',"yello").hide('slow');
+    });
+  </script>
+</body>
+</html>
+
