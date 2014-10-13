@@ -105,4 +105,27 @@ emails:
 {"email"=>{"sub"=>"hephaex@yahoo.co.kr", "main"=>"hephaex@gmail.com"}, "name"=>"hephaex"}
 ```
 
+## 복잡한 자료 구조를 사용해 보자.
 
+```
+- name: hephaex
+  email: hephaex@gmail.com
+- name: hephaex2
+  email: hephaex+sub@gmail.com
+```
+```
+[{"email"=>"hephaex@gmail.com", "name"=>"hephaex"}, {"email"=>"hephaex+sub@gmail.com", "name"=>"hephaex2"}]
+```
+
+* 해쉬에 시쿼스를 넣을수도 있다.
+```
+name:
+  - apple
+  - banana
+cost:
+  - 1000
+  - 2000
+```
+```
+{"cost"=>[1000, 2000], "name"=>["apple", "banana"]}
+```
