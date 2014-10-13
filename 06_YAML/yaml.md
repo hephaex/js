@@ -156,3 +156,29 @@ cost: {apple: 1000, banana: 2000}
 ```
 {"cost"=>{"apple"=>1000, "banana"=>2000}, "name"=>["apple", "banana"]}
 ```
+
+## 각종 데이터를 표현해보자.
+* 문자열:
+```
+str: hello
+```
+
+* 숫자:
+```
+num1: 5
+num2: 3.14
+```
+
+* 진리값:
+```
+bool1: true
+bool2: false
+```
+
+* nothing: null
+* date: 2014-10-12
+* d1: "5"
+
+```
+{"nothing"=>nil, "cost"=>{"banana"=>2000, "apple"=>1000}, "name"=>["apple", "banana"], "d1"=>"5", "date"=>#<Date: 4913885/2,0,2299161>, "bool2"=>false, "bool1"=>true, "num2"=>3.14, "num1"=>5}
+```
