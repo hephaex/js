@@ -182,3 +182,66 @@ bool2: false
 ```
 {"nothing"=>nil, "cost"=>{"banana"=>2000, "apple"=>1000}, "name"=>["apple", "banana"], "d1"=>"5", "date"=>#<Date: 4913885/2,0,2299161>, "bool2"=>false, "bool1"=>true, "num2"=>3.14, "num1"=>5}
 ```
+
+## 개행을 포함한 데이터를 처리해 보자.
+
+```
+doc1:
+  aaa
+  bbb
+  ccc
+```
+
+* 매행에 개행문자가 포함
+```
+doc2: |
+  aaa
+  bbb
+  ccc
+```
+
+* 마지막만 개행이 들어감.
+```
+doc3: >
+  aaa
+  bbb
+  ccc
+```
+
+* 시쿼스로 가능함.
+```
+- |
+ aaa
+ bbb
+ ccc
+```
+
+* 실행결과
+```
+doc1:
+  aaa
+  bbb
+  ccc
+doc2: |
+  aaa
+  bbb
+  ccc
+doc3: >
+  aaa
+  bbb
+  ccc
+```
+
+```
+{"doc3"=>["aaa\nbbb\nccc\n"], "doc2"=>"aaa\nbbb\nccc\n", "doc1"=>"aaa bbb ccc"}
+```
+
+```
+- |
+  aaa
+  bbb
+  ccc
+```
+```
+["aaa\nbbb\nccc\n"]
+```
