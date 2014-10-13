@@ -278,3 +278,7 @@ File.open('mydata.yml') do |io|
   end
 end
 ```
+```
+["d1", "d2", "d3"]
+["x1", "x2"]
+```
