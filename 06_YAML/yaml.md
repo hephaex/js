@@ -79,4 +79,30 @@ bash-4.1# ruby parse.rb
 ["d1", "d2 - x1 - x2", "d3"]
 ```
 
+## 매핑: 키값과 값을 함께 쓴다.
+* key:(공백)value
+
+* 예시 4-1
+```
+name: hephaex
+email: hephaex@gmail.com
+```
+
+```
+bash-4.1# ruby parse.rb
+{"email"=>"hephaex@gmail.com", "name"=>"hephaex"}
+```
+
+* 예시 
+```
+name: hephaex
+emails:
+  main: hephaex@gmail.com
+  sub: hephaex@yahoo.co.kr
+```
+
+```
+{"email"=>{"sub"=>"hephaex@yahoo.co.kr", "main"=>"hephaex@gmail.com"}, "name"=>"hephaex"}
+```
+
 
