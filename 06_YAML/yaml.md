@@ -129,3 +129,30 @@ cost:
 ```
 {"cost"=>[1000, 2000], "name"=>["apple", "banana"]}
 ```
+
+## block style, flow style
+
+* block style
+```
+- d1
+- d2
+- d3
+```
+
+* flow style
+```
+[d1, d2]
+```
+
+* hash flow style
+```
+{name: apple}
+```
+
+```
+name: [apple, banana]
+cost: {apple: 1000, banana: 2000}
+```
+```
+{"cost"=>{"apple"=>1000, "banana"=>2000}, "name"=>["apple", "banana"]}
+```
