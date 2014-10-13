@@ -245,3 +245,36 @@ doc3: >
 ```
 ["aaa\nbbb\nccc\n"]
 ```
+
+## ... 와 --- 를 사용해 보자.
+* '...': 해석을 끝냄
+```
+- d1
+- d2
+...
+- d3
+```
+```
+["d1", "d2"]
+```
+
+* '---': 데이터를 구분함
+```
+---
+- d1
+- d2
+- d3
+---
+- x1
+- x2
+```
+
+```parse.rb
+require 'yaml'
+
+File.open('mydata.yml') do |io|
+  YAML.load_documents(io) do |d|
+      p d
+  end
+end
+```
