@@ -7,3 +7,8 @@ i# Docker
  - Vagrant
 * 환경 CoreOS -> Docker
 
+## vagrant setting
+* wget https://github.com/hephaex/coreos/Vagrantfile
+* vagrant up
+* vagrant ssh
+
