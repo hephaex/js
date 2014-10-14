@@ -156,3 +156,130 @@ core@core-01 ~ $ docker ps -a
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS
 ```
 
+## execution container
+* docker run -d centos:centos6 free -s 3
+```
+core@core-01 ~ $ docker run -d centos:centos6 free -s 3
+15d070a256f989705fcaccc776e9b52a6b29c9b9103018a28287424d1f966f19
+```
+
+* docker logs 15d
+```
+core@core-01 ~ $ docker logs 15d
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     470496    1583776          0       3988     370448
+			 -/+ buffers/cache:      96060    1958212
+			 Swap:            0          0          0
+
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     470300    1583972          0       3988     370568
+			 -/+ buffers/cache:      95744    1958528
+			 Swap:            0          0          0
+
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     470352    1583920          0       3988     370808
+			 -/+ buffers/cache:      95556    1958716
+			 Swap:            0          0          0
+
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     470352    1583920          0       3988     370808
+			 -/+ buffers/cache:      95556    1958716
+			 Swap:            0          0          0
+
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     470668    1583604          0       3988     370808
+			 -/+ buffers/cache:      95872    1958400
+			 Swap:            0          0          0
+
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     470672    1583600          0       3988     370808
+			 -/+ buffers/cache:      95876    1958396
+			 Swap:            0          0          0
+
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     470672    1583600          0       3988     370808
+			 -/+ buffers/cache:      95876    1958396
+			 Swap:            0          0          0
+
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     470672    1583600          0       3988     370808
+			 -/+ buffers/cache:      95876    1958396
+			 Swap:            0          0          0
+
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     470676    1583596          0       3988     370812
+			 -/+ buffers/cache:      95876    1958396
+			 Swap:            0          0          0
+
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     470672    1583600          0       3988     370812
+			 -/+ buffers/cache:      95872    1958400
+			 Swap:            0          0          0
+
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     470672    1583600          0       3988     370812
+			 -/+ buffers/cache:      95872    1958400
+			 Swap:            0          0          0
+
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     470672    1583600          0       3988     370812
+			 -/+ buffers/cache:      95872    1958400
+			 Swap:            0          0          0
+
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     470928    1583344          0       3988     371404
+			 -/+ buffers/cache:      95536    1958736
+			 Swap:            0          0          0
+
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     470928    1583344          0       3988     371404
+			 -/+ buffers/cache:      95536    1958736
+			 Swap:            0          0          0
+
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     470928    1583344          0       3988     371404
+			 -/+ buffers/cache:      95536    1958736
+			 Swap:            0          0          0
+
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     470928    1583344          0       3988     371408
+			 -/+ buffers/cache:      95532    1958740
+			 Swap:            0          0          0
+```
+
+* docker attach --sig-proxy=false 15d
+```
+core@core-01 ~ $ docker attach --sig-proxy=false 15d
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     469784    1584488          0       3988     372336
+			 -/+ buffers/cache:      93460    1960812
+			 Swap:            0          0          0
+
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     469768    1584504          0       3988     372384
+			 -/+ buffers/cache:      93396    1960876
+			 Swap:            0          0          0
+
+             total       used       free     shared    buffers     cached
+			 Mem:       2054272     470080    1584192          0       3988     372384
+			 -/+ buffers/cache:      93708    1960564
+			 Swap:            0          0          0
+```
+
+* docker kill 15d
+```
+core@core-01 ~ $ docker kill 15d
+15d
+core@core-01 ~ $ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES
+15d070a256f9        centos:centos6      "free -s 3"         3 minutes ago       Exited (-1) 6 seconds ago                       desperate_sammet
+```
+
+* docker start 15d
+```
+core@core-01 ~ $ docker start 15d
+15d
+core@core-01 ~ $ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+15d070a256f9        centos:centos6      "free -s 3"         3 minutes ago       Up 4 seconds                            desperate_sammet
+```
