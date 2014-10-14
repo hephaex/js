@@ -115,3 +115,44 @@ core@core-01 ~ $ docker inspect centos:centos6
 	}
 ]
 ```
+
+## docker execution
+* docker run centos echo "hello world"
+```
+core@core-01 ~ $ docker run centos:centos6 echo "hello world"
+hello world
+```
+
+* docker ps -a ## docer process status
+```
+core@core-01 ~ $ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+core@core-01 ~ $ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                CREATED             STATUS                      PORTS               NAMES
+34c267dffde2        centos:centos6      "echo 'hello world'"   53 seconds ago      Exited (0) 52 seconds ago                       furious_yonath
+9db37cc0d4fe        centos:centos6      "/bin/bash"            30 hours ago        Exited (1) 28 hours ago                         boring_engelbart
+```
+
+* docker ps -a -n=1
+```
+core@core-01 ~ $ docker ps -a -n=1
+CONTAINER ID        IMAGE               COMMAND                CREATED              STATUS                          PORTS               NAMES
+34c267dffde2        centos:centos6      "echo 'hello world'"   About a minute ago   Exited (0) About a minute ago                       furious_yonath
+```
+
+* docker rm xxx
+```
+core@core-01 ~ $ docker rm 34c
+34c
+core@core-01 ~ $ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                    PORTS               NAMES
+9db37cc0d4fe        centos:centos6      "/bin/bash"         30 hours ago        Exited (1) 28 hours ago                       boring_engelbart
+```
+
+```
+core@core-01 ~ $ docker rm 9db
+9db
+core@core-01 ~ $ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS
+```
+
