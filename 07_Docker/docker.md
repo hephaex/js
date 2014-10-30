@@ -25,6 +25,7 @@ i# Docker
 ## Docker index.
 * [site](index.docker.io)
 * docker search centos
+
 ```
 core@core-01 ~ $ docker search centos
 NAME                                            DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
@@ -34,6 +35,7 @@ centos                                          The official build of CentOS.   
 ```
 
 * docker images
+
 ```
 core@core-01 ~ $ docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
@@ -41,6 +43,7 @@ centos              centos6             68edf809afe7        12 days ago         
 ```
 
 * docker inspect centos:centos6
+
 ```
 core@core-01 ~ $ docker inspect centos:centos6
 [{
@@ -118,12 +121,14 @@ core@core-01 ~ $ docker inspect centos:centos6
 
 ## docker execution
 * docker run centos echo "hello world"
+
 ```
 core@core-01 ~ $ docker run centos:centos6 echo "hello world"
 hello world
 ```
 
 * docker ps -a ## docer process status
+
 ```
 core@core-01 ~ $ docker ps
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
@@ -134,6 +139,7 @@ CONTAINER ID        IMAGE               COMMAND                CREATED          
 ```
 
 * docker ps -a -n=1
+
 ```
 core@core-01 ~ $ docker ps -a -n=1
 CONTAINER ID        IMAGE               COMMAND                CREATED              STATUS                          PORTS               NAMES
@@ -141,6 +147,7 @@ CONTAINER ID        IMAGE               COMMAND                CREATED          
 ```
 
 * docker rm xxx
+
 ```
 core@core-01 ~ $ docker rm 34c
 34c
@@ -158,12 +165,14 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
 ## execution container
 * docker run -d centos:centos6 free -s 3
+
 ```
 core@core-01 ~ $ docker run -d centos:centos6 free -s 3
 15d070a256f989705fcaccc776e9b52a6b29c9b9103018a28287424d1f966f19
 ```
 
 * docker logs 15d
+
 ```
 core@core-01 ~ $ docker logs 15d
              total       used       free     shared    buffers     cached
@@ -248,6 +257,7 @@ core@core-01 ~ $ docker logs 15d
 ```
 
 * docker attach --sig-proxy=false 15d
+
 ```
 core@core-01 ~ $ docker attach --sig-proxy=false 15d
              total       used       free     shared    buffers     cached
@@ -267,6 +277,7 @@ core@core-01 ~ $ docker attach --sig-proxy=false 15d
 ```
 
 * docker kill 15d
+
 ```
 core@core-01 ~ $ docker kill 15d
 15d
@@ -276,6 +287,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 ```
 
 * docker start 15d
+
 ```
 core@core-01 ~ $ docker start 15d
 15d
@@ -283,3 +295,4 @@ core@core-01 ~ $ docker ps -a
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 15d070a256f9        centos:centos6      "free -s 3"         3 minutes ago       Up 4 seconds                            desperate_sammet
 ```
+
