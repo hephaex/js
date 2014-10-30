@@ -17,6 +17,9 @@
 - JavaScript를 편리하게 사용하기 위한 라이브러리
 - 공식사이트 : [JQuery](http://www.jquery.com)
 
+## [06_YAML](https://github.com/hephaex/js/blob/master/06_YAML/yaml.md) 
+- data를 표현하기 위한 방법
+- 공식사이트 : [YAML](http://www.YAML.com)
 
 
 이 자료는 dotinstall.com를 정리한 것입니다.
